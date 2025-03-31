@@ -96,4 +96,14 @@ During preview, the plugin will run:
 - `/adminclass`  
   Resets the player's HUD and exits preview mode manually.
 
+# How to set this up?
+This plugin requires a server to only be responsible for class selection. It cannot (at the moment) run in the same server players play on.
+This plugin is made to be ran alongside another "profile" server running MMOProfiles. On new-profile creation, It sends the players to the class selection server. If they select an already made profile, It skips class selection and instantly sends them to RPG
+Let me know if i should implement a better method if anyone is interested in using this plugin INSIDE the playing server
+
+- Spawn NPCs (Citizens has /npc mimic feature to get the player's skin) and equip it with something that fits the class with /npc equip
+- Setup the config for Classes, Song name during the class selection, Scoreboards etc..
+- Grab the coords for the camera location when looking at the NPC and place that in the config
+- Join the server
+
 
