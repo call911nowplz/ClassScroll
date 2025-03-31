@@ -1,0 +1,8 @@
+name: ClassScroll
+version: 1.0
+main: arcane.classes.plugin.ClassSelector
+api-version: 1.21
+depend: [ProtocolLib, MMOCore, ItemsAdder, MythicHUD]
+commands:
+  adminclass:
+    description: Exit class selector mode
