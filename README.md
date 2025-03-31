@@ -51,3 +51,49 @@ screeneffect:
 
 kick-delay-ticks: 120
 kick-message: "Server is full!"
+```
+
+## Required Format for Integrations
+
+### MythicHUD
+
+Each class **must have a HUD layout** named exactly like this:
+
+```
+<lowercase_class_name>_hud-layout
+```
+
+**Example**:
+```yaml
+barbarian_hud-layout
+archer_hud-layout
+summoner_hud-layout
+```
+
+These layouts will be dynamically added and removed during class previews.
+
+### TAB Scoreboard
+
+Each class **must have a scoreboard** configured in TAB using the class name **as-is**, matching the `classes:` list.
+
+**Example**:
+```yaml
+scoreboards:
+  Barbarian:
+    ...
+  Archer:
+    ...
+```
+
+During preview, the plugin will run:
+```
+/tab scoreboard show <ClassName> <PlayerName>
+```
+
+
+## Commands
+
+- `/adminclass`  
+  Resets the player's HUD and exits preview mode manually.
+
+
