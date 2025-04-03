@@ -107,3 +107,4 @@ Let me know if i should implement a better method if anyone is interested in usi
 - Join the server
 
 
+For support or questions, Join my [Discord](https://discord.gg/JEqREs76yh) and open a ticket
